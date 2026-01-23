@@ -11,6 +11,7 @@ Follow any applicable documentation skills for workflow and quality checks.
 Use skills to guide *how* you work, while you decide *what* to write.
 
 **Primary Focus - README Files:**
+- Check for changes on git remote README.md before starting updates
 - Create and update README.md files with clear project descriptions
 - Structure README sections logically: overview, installation, usage, contributing
 - Write scannable content with proper headings and formatting

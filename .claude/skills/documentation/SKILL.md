@@ -26,6 +26,7 @@ not what the documentation must say.
 - Project structure
 - Project intent and audience
 - Documentation guidelines from `agents.md`
+- perform git remote pull for README.md before you start updating
 
 ---
 
