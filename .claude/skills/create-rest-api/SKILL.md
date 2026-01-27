@@ -60,6 +60,20 @@ Executed in order:
 
 ---
 
+## Pre-Implementation Checklist
+
+**REQUIRED: Before any implementation, complete these steps:**
+
+- [ ] Read `api-design/SKILL.md` - Understand API design patterns and contract definition
+- [ ] Read `validation/SKILL.md` - Learn validation strategies and error handling
+- [ ] Read `service-logic/SKILL.md` - Review service layer implementation patterns
+- [ ] Read `dao-access/SKILL.md` - Understand persistence and data access patterns
+- [ ] Read `test-generation/SKILL.md` - Learn test generation guidelines and coverage expectations
+
+**Agent must acknowledge completion of all reads before proceeding with implementation.**
+
+---
+
 ## Procedure
 1. Clarify requirements and assumptions
 2. Design API contract
