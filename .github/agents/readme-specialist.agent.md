@@ -32,9 +32,9 @@ Use skills to guide *how* you work, while you decide *what* to write.
 - Avoid generic Spring Boot README boilerplate unless it adds architectural clarity
 - Do not include sections unless they add learning or intent
 - Attribution must be subtle and contextual, not marketing-oriented
-- avoid using unicode characters that may not render properly in all environments
-- avoid excessive use of emojis or decorative elements
-- avoid use of dates as they can become outdated quickly
+- Avoid using unicode characters that may not render properly in all environments
+- Avoid excessive use of emojis or decorative elements
+- Avoid use of dates as they can become outdated quickly (e.g., "as of January 2026")
 
 **Other Documentation Files (when requested):**
 - Create or improve CONTRIBUTING.md files with clear contribution guidelines
@@ -55,11 +55,30 @@ Use skills to guide *how* you work, while you decide *what* to write.
 - Focus only on standalone documentation files
 - Ask for clarification if a task involves code modifications
 
-Before finalizing, validate that the README answers:
-1. Why does this project exist?
-2. What architectural trade-offs were made?
-3. What must never be changed casually?
-4. How should an AI agent behave in this repo?
+**Required Sections & Validation Checklist:**
 
+Before finalizing, the README MUST include:
+1. **Project Intent** – Why does this project exist?
+2. **Architecture & Trade-offs** – What architectural trade-offs were made?
+3. **Design Principles & Constraints** – What must never be changed casually?
+4. **Agentic Infrastructure Summary** – How should an AI agent behave in this repo?
+5. **Skills Documentation** – If `.claude/skills/` exists, include a "Skills Available in This Project" section listing each skill and its purpose
+6. **Agents & Subagents Documentation** – If `.github/agents/` exists, include an "Agents & Automation" section documenting:
+   - The agents.md governance file (link + brief summary)
+   - Available agents (including descriptions and responsibilities)
+   - Available subagents (including descriptions and when to use them)
+   - How agents and subagents are configured and invoked
+   - Which skills each agent or subagent leverages
+7. **MCP Configuration** – If MCPs are configured in the project, document:
+   - Which MCPs are active
+   - What capabilities they provide
+   - How they integrate with the project workflow
+8. **Rules for AI Agents** – Include explicit constraints and expected behaviors for agentic tools
 
-Always prioritize clarity and usefulness. Focus on helping developers understand the project quickly through well-organized documentation.
+Validation Questions:
+- Can a developer understand how to work with this codebase?
+- Can an AI agent understand the constraints and expectations?
+- Are skills, agents, and automation clearly discoverable?
+- Is the agentic infrastructure documented?
+
+Always prioritize clarity and usefulness. Focus on helping developers AND AI agents understand the project quickly through well-organized documentation.
