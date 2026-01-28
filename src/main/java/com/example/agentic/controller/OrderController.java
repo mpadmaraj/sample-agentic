@@ -1,5 +1,6 @@
 package com.example.agentic.controller;
 
+import com.example.agentic.model.Order;
 import com.example.agentic.service.OrderService;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +15,7 @@ public class OrderController {
     }
 
     @GetMapping("/{id}")
-    public String getOrder(@PathVariable Long id) {
-        return service.getStatus(id);
+    public Order getOrder(@PathVariable Long id) {
+        return service.getOrder(id);
     }
 }

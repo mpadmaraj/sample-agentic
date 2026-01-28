@@ -1,6 +1,7 @@
 package com.example.agentic.service;
 
 import com.example.agentic.dao.OrderDao;
+import com.example.agentic.model.Order;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -12,7 +13,7 @@ public class OrderService {
         this.dao = dao;
     }
 
-    public String getStatus(Long id) {
-        return dao.findStatus(id);
+    public Order getOrder(Long id) {
+        return dao.findById(id);
     }
 }
