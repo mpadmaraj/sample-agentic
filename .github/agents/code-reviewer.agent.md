@@ -2,6 +2,7 @@
 name: code-reviewer
 description: Specialized agent for reviewing code 
 tools: ['read', 'agent', 'edit', 'search']
+mode: GPT-5.1-Codex
 ---
 # Code Reviewer Agent
 

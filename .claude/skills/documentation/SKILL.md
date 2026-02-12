@@ -74,6 +74,10 @@ Before completion, ensure:
 
 ---
 
+## Output Files
+
+### 1. `docs/{random-no}/review-document.md`
+
 ## Notes for Review
 Record:
 - Assumptions made
